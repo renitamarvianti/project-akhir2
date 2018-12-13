@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-xs-12">
+        <img [src]="karyawan.imagePath"
+        alt="{{karyawan.name}}"
+        class="img-responsive"
+        style="max-height:300px;">
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{karyawan.name}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div 
+      class="btn-group"
+      appDropdown>
+        <button type="button" 
+        class="btn btn-primary dropdown-toogle">
+          Pengaturan Karyawan<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a style="cursor:pointer;" (click)="onEditKaryawan()">Edit Karyawan</a></li>
+          <li><a style="cursor:pointer;" (click)="onDeleteKaryawan()">Hapus Karyawan</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+  
+  

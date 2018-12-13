@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sm-5">
+    <app-karyawan-list></app-karyawan-list>
+  </div>
+  <div class="col-sm-7">
+    <!-- <app-karyawan-detail
+    *ngIf="selectedKaryawan;else infotext"
+    [karyawan]="selectedKaryawan"></app-karyawan-detail>
+    <ng-template #infotext>
+      <p>Please Select Karyawan</p>
+    </ng-template> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

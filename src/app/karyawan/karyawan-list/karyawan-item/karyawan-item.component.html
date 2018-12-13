@@ -1,0 +1,19 @@
+<a 
+style="cursor:pointer;"
+[routerLink]="[index]"
+routerLinkActive="active"
+class="list-group-item clearfix">
+            <div class="pull-left">
+                <h4 class="list-group-item-heading">{{karyawan.name}}</h4>
+                <p class="list-group-item-text">{{karyawan.position}}</p>
+                <p class="list-group-item-text">{{karyawan.address}}</p>
+                <p class="list-group-item-text">{{karyawan.notelp}} </p>
+                <p class="list-group-item-text">{{karyawan.salary}} </p>
+            </div>
+            <span class="pull-right">
+                    <img [src]="karyawan.imagePath"
+                    alt="{{karyawan.name}}"
+                    class="img-responsive"
+                    style="max-height:100px;">
+            </span>
+        </a>
