@@ -32,5 +32,6 @@ id:number;
 
   onDeleteKaryawan(){
     this.karyawanService.deleteKaryawan(this.id);
+    this.router.navigate(['/karyawans']);
   }
 }

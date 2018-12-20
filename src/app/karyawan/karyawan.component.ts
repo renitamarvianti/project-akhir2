@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { KaryawanService } from './karyawan.service';
 
 @Component({
   selector: 'app-karyawan',
   templateUrl: './karyawan.component.html',
-  styleUrls: ['./karyawan.component.css'],
-  providers:[KaryawanService],
+  styleUrls: ['./karyawan.component.css']
 })
 export class KaryawanComponent implements OnInit {
 

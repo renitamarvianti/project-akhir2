@@ -10,13 +10,14 @@ export class KaryawanService {
   karyawansChanged=new Subject<Karyawan[]>();
 
   karyawans:Karyawan[]=[
-    new Karyawan('../src/app/img/ina.jpg','Renita Marvianti Dwi Kusuma','Manager','Karangploso','083833823615','10.000.000'),
-    new Karyawan('../src/app/img/ina2.jpg','Novita Rahma Sari','Manager','Dinoyo','083833823615','10.000.000'),
+    new Karyawan('../src/app/img/gambar1.jpg','Lee Jong Suk','Manager','Karangploso','083833823615','10.000.000'),
+    new Karyawan('../src/app/img/gambar2.jpg','Park Bo Gum','Manager','Dinoyo','089657528342','10.000.000'),
   ];
 constructor() { }
 
 setKaryawans(karyawans: Karyawan[]){
   this.karyawans=karyawans;
+  this.karyawansChanged.next(this.karyawans.slice());
 }
 
 getKaryawans(){

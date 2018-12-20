@@ -15,6 +15,8 @@ import { KaryawanDetailComponent } from "./karyawan/karyawan-detail/karyawan-det
 import { KaryawanItemComponent } from "./karyawan/karyawan-list/karyawan-item/karyawan-item.component";
 import { DropdownDirective } from './shared/dropdown.directive';
 import { KaryawanEditComponent } from './karyawan/karyawan-edit/karyawan-edit.component';
+import { KaryawanService } from './karyawan/karyawan.service';
+import { DataStorageService } from './shared/data-storage.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import { KaryawanEditComponent } from './karyawan/karyawan-edit/karyawan-edit.co
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [KaryawanService, DataStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
